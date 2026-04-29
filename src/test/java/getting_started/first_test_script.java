@@ -9,15 +9,15 @@ public class first_test_script {
     public static void main(String[] args) {
         Playwright pw = Playwright.create();
         BrowserType browsertype = pw.chromium();
-        Browser browser = browsertype.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = browsertype.launch(new BrowserType.LaunchOptions().setHeadless(false).setChannel("msedge"));
         Page page = browser.newPage();
         page.navigate("https://www.google.com");
         String title = page.title();
         System.out.println("Title = " + title);
 
         //Closing the test
-        page.close();
-        browser.close();
-        pw.close();
+        // page.close();
+        // browser.close();
+        // pw.close();
     }
 }
