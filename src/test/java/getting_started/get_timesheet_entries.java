@@ -12,7 +12,7 @@ public class get_timesheet_entries {
         BrowserType browsertype = pw.chromium();
         Browser browser = browsertype.launch(new BrowserType.LaunchOptions().setHeadless(false));
         Page page = browser.newPage();
-        page.navigate("https://cslforce.com/web#id=9646&cids=1&menu_id=704&model=project.task&view_type=form");
+        page.navigate("https://cslforce.com/web#id=9646&cids=1&menu_id=704&model=project.task&view_type=form")
 
 
 
